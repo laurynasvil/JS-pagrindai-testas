@@ -4,6 +4,19 @@ Sugeneruokite atsitiktinį skaičių (eurų sumą) nuo 1 iki 1000.
 Pritaikykite savo sukurtą funkciją ir išspausdinkite atitikmenį
 doleriais.
 */
+console.log('');
+console.log('--------1uzd---------');
+console.log('');
+
+function konverteris() {
+    let euruSuma = Math.floor(Math.random() * 1000)
+    console.log("Euru suma:", euruSuma)
+    let doleris = 1.05
+    let paversta = euruSuma * doleris
+    console.log(`Valiutos skaiciuokle: ${euruSuma} -EURU konvertuojama i dolerius - ${paversta.toFixed(2)}$ `)
+
+}
+konverteris()
 
 /*
 2. Sukurkite funkciją, kuri paverstų dolerius į eurus.
@@ -11,6 +24,20 @@ Sugeneruokite atsitiktinį skaičių (dolerių sumą) nuo 1 iki 1000.
 Pritaikykite savo sukurtą funkciją ir išspausdinkite atitikmenį
 eurais.
 */
+
+console.log('');
+console.log('--------2uzd---------');
+console.log('');
+
+function konvertuoti() {
+    let doleriuSuma = Math.floor(Math.random() * 1000)
+    console.log("Doleriu suma:", doleriuSuma)
+    let euras = 0.95
+    let paversta = doleriuSuma * euras
+    console.log(`Valiutos skaiciuokle: ${doleriuSuma} -JAV doleris konvertuojama i EURUS - ${paversta.toFixed(2)}-eur`)
+
+}
+konvertuoti()
 
 /*
 3. Parašykite programą, kuri suskaičiuotų žmogaus BMI (body
@@ -23,11 +50,41 @@ Normalu = 18.5 <= BMI < 25
 Per mažas svoris = BMI < 18.5
 */
 
+console.log('');
+console.log('--------3uzd---------');
+console.log('');
+
+function bmiSkaiciuotuvas(ugis, svoris) {
+    let bmi = svoris / ugis ** 2
+
+    if (bmi < 18.5) {
+        console.log("BMI indeksas:", bmi.toFixed(2), "Rezultatas- Svorio trukumas")
+    } else if (18.5 <= bmi && bmi < 25) {
+        console.log("BMI indeksas:", bmi.toFixed(2), "Rezultatas- Normalus")
+    } else {
+        console.log("BMI indeksas:", bmi.toFixed(2), "Rezultatas- Virssvoris")
+    }
+}
+
+bmiSkaiciuotuvas(1.80,80)
+
 /*
 4. Parašykite programą, kuri iš duoto žmogaus amžiaus metais
 pasakytų kiek tai yra sekundėmis, minutėmis, valandomis,
 dienomis.
 */
+
+console.log('');
+console.log('--------4uzd---------');
+console.log('');
+
+function laikoSkaiciuotuvas(metai){
+let metuoseSekundziu = 365 * 24 * 60 * 60
+let amziusSekundemis = metuoseSekundziu * metai
+
+}
+laikoSkaiciuotuvas(29)
+
 
 /*
 5. Parašykite programą, kuri konvertuos termometro
