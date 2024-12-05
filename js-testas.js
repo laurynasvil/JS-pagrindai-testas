@@ -77,6 +77,8 @@ dienomis.
 console.log('');
 console.log('--------4uzd---------');
 console.log('');
+
+
 let dienos = 365;
 let dienojeH = 24;
 let valandojeMin = 60;
@@ -107,7 +109,22 @@ laikoSkaiciuotuvas(29)
 5. Parašykite programą, kuri konvertuos termometro
 duomenis iš Farenheito į Celsijų, ir atvirkščiai.
 */
+console.log('');
+console.log('--------5uzd---------');
+console.log('');
 
+function isCelcijausIfarengeita(celcijus) {
+    let farengeitas = (celcijus * 9/5) +32
+    console.log(`${celcijus}°C yra ${farengeitas}°F`)
+}
+
+isCelcijausIfarengeita(25)
+
+function isFarengeitoIcelciju(farengeitas){
+    let celcijus = (farengeitas - 32) * 5/9;
+    console.log(`${farengeitas}°F yra ${celcijus}°C`)
+}
+isFarengeitoIcelciju(77)
 /*
 6. Sukurkite kodą, kuris išspausdins į konsolę
 1-2-3-4-5-6-7-8-9-10 vienoje eilutėje. Prieš vienetą ir po
