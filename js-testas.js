@@ -147,10 +147,28 @@ console.log(skaiciuMasyvas.join("-"))
 ****
 *****
 */
+console.log('');
+console.log('--------7uzd---------');
+console.log('');
 
+let star = "*"
+for (let i = 1; i <= 5 ; i++){
+    console.log(star)
+}
 /*
 8. Parašykite kodą, kuris apskaičiuos kiek liko dienų iki Kalėdų.
 */
+console.log('');
+console.log('--------8uzd---------');
+console.log('');
+
+let dabartineDiena = new Date(2024,12,5);
+let kaledos = new Date(2024,12,25);
+let ikiKaledu = kaledos - dabartineDiena;
+let ikiKaleduLiko = ikiKaledu / (1000 * 60 * 60 * 24);
+
+console.log(`Iki Kaledu liko ${ikiKaleduLiko} dienu.`);
+
 
 /*
 9. Parašykite kodą, kuris apjungia masyvo duomenis į vieną
@@ -158,6 +176,8 @@ tekstinę eilutę. Turėtumėte gauti tokį rezultatą:
 Tomas,Dainius,Paulius,Jonas
 Tomas+Dainius+Paulius+Jonas
 */
+
+
 
 /*
 10. Parašykite kodą, kuris sugeneruos dvylikos simbolių
