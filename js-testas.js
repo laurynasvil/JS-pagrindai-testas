@@ -125,11 +125,19 @@ function isFarengeitoIcelciju(farengeitas){
     console.log(`${farengeitas}°F yra ${celcijus}°C`)
 }
 isFarengeitoIcelciju(77)
+
+
 /*
 6. Sukurkite kodą, kuris išspausdins į konsolę
 1-2-3-4-5-6-7-8-9-10 vienoje eilutėje. Prieš vienetą ir po
 dešimties neturėtų būti brūkšniuko.
 */
+console.log('');
+console.log('--------6uzd---------');
+console.log('');
+
+let skaiciuMasyvas = [1,2,3,4,5,6,7,8,9,10]
+console.log(skaiciuMasyvas.join("-"))
 
 /*
 7. Panaudokite for ciklus, kad sukurtumėte tokį vaizdą konsolėje.
