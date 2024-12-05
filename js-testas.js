@@ -9,7 +9,7 @@ console.log('--------1uzd---------');
 console.log('');
 
 function konverteris() {
-    let euruSuma = Math.floor(Math.random() * 1000);
+    let euruSuma = Math.floor(Math.random() * 1000) + 1;
     console.log("Euru suma:", euruSuma);
     let doleris = 1.05;
     let paversta = euruSuma * doleris;
@@ -30,7 +30,7 @@ console.log('--------2uzd---------');
 console.log('');
 
 function konvertuoti() {
-    let doleriuSuma = Math.floor(Math.random() * 1000);
+    let doleriuSuma = Math.floor(Math.random() * 1000) + 1;
     console.log("Doleriu suma:", doleriuSuma);
     let euras = 0.95;
     let paversta = doleriuSuma * euras;
@@ -153,9 +153,9 @@ console.log('');
 
 let star = "";
 for (let i = 1; i <= 5; i++) {
-    star +="*";
+    star += "*";
     console.log(star);
-} 
+}
 
 /*
 8. Parašykite kodą, kuris apskaičiuos kiek liko dienų iki Kalėdų.
@@ -194,13 +194,68 @@ vardai()
 
 /*
 10. Parašykite kodą, kuris sugeneruos dvylikos simbolių
-slaptažodį. Slaptažodyje privalo būti bent po vieną: didžioji raidė,
-mažoji raidė, skaičius, specialusis simbolis. Visi slaptažodžio
-simboliai privalo būti atsitiktiniai ir atsitiktine tvarka.
+slaptažodį.
+
+Slaptažodyje privalo būti bent po vieną:
+ 
+didžioji raidė,
+
+mažoji raidė,
+
+skaičius,
+
+specialusis simbolis.
+
+Visi slaptažodžio simboliai privalo būti atsitiktiniai ir atsitiktine tvarka.
 */
 console.log('');
 console.log('--------10uzd---------');
 console.log('');
 
+let didziosiosRaides = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+let mazosiosRaides = "abcdefghijklmnopqrstuvwxyz";
+let skaiciai = "0123456789";
+let specialusSimboliai = "!@#$%^&*()_-+={}[]|<>?~";
 
 
+
+let randomDidziosiosRaides = "";
+for (let i = 0; i < 3; i++){
+let randomD = Math.floor(Math.random() * didziosiosRaides.length);
+randomDidziosiosRaides += didziosiosRaides.charAt(randomD);
+}
+
+
+
+let randomMazosiosRaides = "";
+for(let i =0; i <3; i++ ){
+    let randomM = Math.floor(Math.random() * mazosiosRaides.length);
+    randomMazosiosRaides += mazosiosRaides.charAt(randomM);
+}
+
+
+
+let randomSkaiciai = "";
+for(let i =0; i <3; i++ ){
+    let randomS = Math.floor(Math.random() * skaiciai.length);
+    randomSkaiciai += skaiciai.charAt(randomS);
+}
+
+
+
+let randomSpecialusSimboliai = "";
+for(let i =0; i <3; i++ ){
+    let randomSpec = Math.floor(Math.random() * specialusSimboliai.length);
+    randomSpecialusSimboliai += specialusSimboliai.charAt(randomSpec);
+}
+
+
+
+let bendriSimboliai = randomDidziosiosRaides + randomMazosiosRaides + randomSkaiciai + randomSpecialusSimboliai;
+let rezultatas = "";
+for(let i =0; i <12; i++ ){
+    let randomRezultatas = Math.floor(Math.random() * bendriSimboliai.length);
+    rezultatas += bendriSimboliai.charAt(randomRezultatas);
+}
+console.log("Atsitiktinis slaptazodis",rezultatas);
+console.log("Slaptazodzio ilgis:",rezultatas.length);
