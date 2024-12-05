@@ -9,14 +9,14 @@ console.log('--------1uzd---------');
 console.log('');
 
 function konverteris() {
-    let euruSuma = Math.floor(Math.random() * 1000)
-    console.log("Euru suma:", euruSuma)
-    let doleris = 1.05
-    let paversta = euruSuma * doleris
-    console.log(`Valiutos skaiciuokle: ${euruSuma} -EURU konvertuojama i dolerius - ${paversta.toFixed(2)}$ `)
+    let euruSuma = Math.floor(Math.random() * 1000);
+    console.log("Euru suma:", euruSuma);
+    let doleris = 1.05;
+    let paversta = euruSuma * doleris;
+    console.log(`Valiutos skaiciuokle: ${euruSuma} -EURU konvertuojama i dolerius - ${paversta.toFixed(2)}$ `);
 
 }
-konverteris()
+konverteris();
 
 /*
 2. Sukurkite funkciją, kuri paverstų dolerius į eurus.
@@ -30,11 +30,11 @@ console.log('--------2uzd---------');
 console.log('');
 
 function konvertuoti() {
-    let doleriuSuma = Math.floor(Math.random() * 1000)
-    console.log("Doleriu suma:", doleriuSuma)
-    let euras = 0.95
-    let paversta = doleriuSuma * euras
-    console.log(`Valiutos skaiciuokle: ${doleriuSuma} -JAV doleris konvertuojama i EURUS - ${paversta.toFixed(2)}-eur`)
+    let doleriuSuma = Math.floor(Math.random() * 1000);
+    console.log("Doleriu suma:", doleriuSuma);
+    let euras = 0.95;
+    let paversta = doleriuSuma * euras;
+    console.log(`Valiutos skaiciuokle: ${doleriuSuma} -JAV doleris konvertuojama i EURUS - ${paversta.toFixed(2)}-eur`);
 
 }
 konvertuoti()
@@ -55,18 +55,18 @@ console.log('--------3uzd---------');
 console.log('');
 
 function bmiSkaiciuotuvas(ugis, svoris) {
-    let bmi = svoris / ugis ** 2
+    let bmi = svoris / ugis ** 2;
 
     if (bmi < 18.5) {
-        console.log("BMI indeksas:", bmi.toFixed(2), "Rezultatas- Svorio trukumas")
+        console.log("BMI indeksas:", bmi.toFixed(2), "Rezultatas- Svorio trukumas");
     } else if (18.5 <= bmi && bmi < 25) {
-        console.log("BMI indeksas:", bmi.toFixed(2), "Rezultatas- Normalus")
+        console.log("BMI indeksas:", bmi.toFixed(2), "Rezultatas- Normalus");
     } else {
-        console.log("BMI indeksas:", bmi.toFixed(2), "Rezultatas- Virssvoris")
+        console.log("BMI indeksas:", bmi.toFixed(2), "Rezultatas- Virssvoris");
     }
 }
 
-bmiSkaiciuotuvas(1.80,80)
+bmiSkaiciuotuvas(1.80, 80);
 
 /*
 4. Parašykite programą, kuri iš duoto žmogaus amžiaus metais
@@ -82,27 +82,27 @@ console.log('');
 let dienos = 365;
 let dienojeH = 24;
 let valandojeMin = 60;
-let sekundeseS = 60
+let sekundeseS = 60;
 
 
-function laikoSkaiciuotuvas(metai){
+function laikoSkaiciuotuvas(metai) {
 
-let metuoseSekundziu = dienos * dienojeH * valandojeMin * sekundeseS;
-let amziusSekundemis = metuoseSekundziu * metai;
-console.log("Amzius sekundemis-",amziusSekundemis);
+    let metuoseSekundziu = dienos * dienojeH * valandojeMin * sekundeseS;
+    let amziusSekundemis = metuoseSekundziu * metai;
+    console.log("Amzius sekundemis-", amziusSekundemis);
 
-let metuoseMinuciu = dienos * dienojeH * valandojeMin;
-let amziusMinutemis =metuoseMinuciu * metai;
-console.log("Amzius minutemis-",amziusMinutemis);
+    let metuoseMinuciu = dienos * dienojeH * valandojeMin;
+    let amziusMinutemis = metuoseMinuciu * metai;
+    console.log("Amzius minutemis-", amziusMinutemis);
 
-let metuoseValandu = dienos * dienojeH;
-let amziusValandomis = metuoseValandu * metai;
-console.log("Amzius valandomis-",amziusValandomis);
+    let metuoseValandu = dienos * dienojeH;
+    let amziusValandomis = metuoseValandu * metai;
+    console.log("Amzius valandomis-", amziusValandomis);
 
-let amziusDienomis = dienos * metai;
-console.log("Amzius dienomis",amziusDienomis)
+    let amziusDienomis = dienos * metai;
+    console.log("Amzius dienomis", amziusDienomis)
 }
-laikoSkaiciuotuvas(29)
+laikoSkaiciuotuvas(29);
 
 
 /*
@@ -114,15 +114,15 @@ console.log('--------5uzd---------');
 console.log('');
 
 function isCelcijausIfarengeita(celcijus) {
-    let farengeitas = (celcijus * 9/5) +32
-    console.log(`${celcijus}°C yra ${farengeitas}°F`)
+    let farengeitas = (celcijus * 9 / 5) + 32;
+    console.log(`${celcijus}°C yra ${farengeitas}°F`);
 }
 
 isCelcijausIfarengeita(25)
 
-function isFarengeitoIcelciju(farengeitas){
-    let celcijus = (farengeitas - 32) * 5/9;
-    console.log(`${farengeitas}°F yra ${celcijus}°C`)
+function isFarengeitoIcelciju(farengeitas) {
+    let celcijus = (farengeitas - 32) * 5 / 9;
+    console.log(`${farengeitas}°F yra ${celcijus}°C`);
 }
 isFarengeitoIcelciju(77)
 
@@ -136,8 +136,8 @@ console.log('');
 console.log('--------6uzd---------');
 console.log('');
 
-let skaiciuMasyvas = [1,2,3,4,5,6,7,8,9,10]
-console.log(skaiciuMasyvas.join("-"))
+let skaiciuMasyvas = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+console.log(skaiciuMasyvas.join("-"));
 
 /*
 7. Panaudokite for ciklus, kad sukurtumėte tokį vaizdą konsolėje.
@@ -151,10 +151,12 @@ console.log('');
 console.log('--------7uzd---------');
 console.log('');
 
-let star = "*"
-for (let i = 1; i <= 5 ; i++){
-    console.log(star)
-}
+let star = "";
+for (let i = 1; i <= 5; i++) {
+    star +="*";
+    console.log(star);
+} 
+
 /*
 8. Parašykite kodą, kuris apskaičiuos kiek liko dienų iki Kalėdų.
 */
@@ -162,8 +164,8 @@ console.log('');
 console.log('--------8uzd---------');
 console.log('');
 
-let dabartineDiena = new Date(2024,12,5);
-let kaledos = new Date(2024,12,25);
+let dabartineDiena = new Date(2024, 12, 5);
+let kaledos = new Date(2024, 12, 25);
 let ikiKaledu = kaledos - dabartineDiena;
 let ikiKaleduLiko = ikiKaledu / (1000 * 60 * 60 * 24);
 
@@ -177,6 +179,17 @@ Tomas,Dainius,Paulius,Jonas
 Tomas+Dainius+Paulius+Jonas
 */
 
+console.log('');
+console.log('--------9uzd---------');
+console.log('');
+
+function vardai() {
+    let varduMasyvas = ["Tomas", "Dainius", "Paulius", "Jonas"];
+    console.log(varduMasyvas.join(","));
+    console.log(varduMasyvas.join("+"));
+}
+
+vardai()
 
 
 /*
@@ -185,3 +198,9 @@ slaptažodį. Slaptažodyje privalo būti bent po vieną: didžioji raidė,
 mažoji raidė, skaičius, specialusis simbolis. Visi slaptažodžio
 simboliai privalo būti atsitiktiniai ir atsitiktine tvarka.
 */
+console.log('');
+console.log('--------10uzd---------');
+console.log('');
+
+
+
