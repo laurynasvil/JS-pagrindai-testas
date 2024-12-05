@@ -77,11 +77,28 @@ dienomis.
 console.log('');
 console.log('--------4uzd---------');
 console.log('');
+let dienos = 365;
+let dienojeH = 24;
+let valandojeMin = 60;
+let sekundeseS = 60
+
 
 function laikoSkaiciuotuvas(metai){
-let metuoseSekundziu = 365 * 24 * 60 * 60
-let amziusSekundemis = metuoseSekundziu * metai
 
+let metuoseSekundziu = dienos * dienojeH * valandojeMin * sekundeseS;
+let amziusSekundemis = metuoseSekundziu * metai;
+console.log("Amzius sekundemis-",amziusSekundemis);
+
+let metuoseMinuciu = dienos * dienojeH * valandojeMin;
+let amziusMinutemis =metuoseMinuciu * metai;
+console.log("Amzius minutemis-",amziusMinutemis);
+
+let metuoseValandu = dienos * dienojeH;
+let amziusValandomis = metuoseValandu * metai;
+console.log("Amzius valandomis-",amziusValandomis);
+
+let amziusDienomis = dienos * metai;
+console.log("Amzius dienomis",amziusDienomis)
 }
 laikoSkaiciuotuvas(29)
 
